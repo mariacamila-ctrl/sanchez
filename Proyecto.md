@@ -19,8 +19,9 @@ Nombre de la empresa: Beauty Studio
 Sector economico:Sector terciario
 
 DESCRIPCIÓN DEL PROBLEMA O LA NECESIDAD: 
-LA TIENDA TIENE LA NECESIDAD DE CONTAR CON UN SISTEMA QUE PERMITA ORGANIZAR, CONTROLAR EL INVENTARIO Y LAS VENTAS 
-DE ESTE DE MANERA EFICIENTE, CON EL FIN DE EVITAR PRODUCTOS FALTANTES Y LA REDUCCION DE ERRORES.
+La tienda tiene la necesidad de contar con un sistema que permita organizar, contolar el invetario y las ventas 
+de manera eficiente, para evitar errores de inventario, ya sean de ventas, productos que llegan, productos que
+salen, entre otros.
 
 # SOLUCION OFRECIDA:
 Crear un sistema informatico que permita almacenar y registrar automaticamente las ventas y el inventario para tener un mejor control de productos y ventas,
