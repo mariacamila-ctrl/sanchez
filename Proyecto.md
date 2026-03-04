@@ -5,8 +5,11 @@ Nombre Equipo: los galacticos
 Enlace repositorio: https://github.com/mariacamila-ctrl/Beauty-Studio.git
 
 Nombre de Integrantes:
+
 carlos santiago achipiz
+
 victor alejandro pantoja
+
 maria camila sanchez
 
 # IDENTIFICACION DE LA ORGANIZACION Y EL PROBLEMA:
