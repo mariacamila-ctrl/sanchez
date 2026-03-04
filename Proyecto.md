@@ -11,6 +11,8 @@ maria camila sanchez
 
 # IDENTIFICACION DE LA ORGANIZACION Y EL PROBLEMA:
 Nombre de la empresa: Beauty Studio
+
+
 Sector economico:Sector terciario
 
 DESCRIPCIÓN DEL PROBLEMA O LA NECESIDAD: 
