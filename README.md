@@ -14,150 +14,221 @@ victor alejandro pantoja
 
 maria camila sanchez
 
-# IDENTIFICACION DE LA ORGANIZACION Y EL PROBLEMA:
+IDENTIFICACIÓN DE LA ORGANIZACIÓN Y EL PROBLEMA
+
 Nombre de la empresa: Beauty Studio
+Sector económico: Sector terciario (comercio y servicios de belleza)
 
-Sector económico: Sector terciario (comercio y prestación de servicios de belleza)
+Descripción del problema
 
-Descripción del problema o necesidad:
+Beauty Studio no cuenta actualmente con un sistema de información automatizado para la gestión del inventario
 
-Beauty Studio actualmente no cuenta con un sistema de información que permita
+y el registro de ventas. Estas actividades se realizan de forma manual, lo que genera:
 
-gestionar de manera estructurada el inventario y el registro de ventas.
+Falta de control en las existencias
 
-La administración de los productos se realiza de forma manual o empírica, lo que genera:
+Riesgo de desabastecimiento
 
-Falta de control en las existencias.
+Pérdidas económicas por errores humanos
 
-Riesgo de desabastecimiento de productos.
+Dificultad para generar reportes
 
-Posibles pérdidas económicas por errores en el registro.
+Procesos administrativos ineficientes
 
-Dificultad para generar reportes de ventas.
+La ausencia de un sistema limita la toma de decisiones basadas en datos confiables y actualizados.
 
-Procesos administrativos poco eficientes.
+SOLUCIÓN PROPUESTA
 
-La ausencia de un sistema automatizado limita la toma de decisiones basadas en datos reales
+Se propone el diseño e implementación de un sistema de información que permita:
 
-y actualizados, afectando tanto la gestión interna como la atención al cliente.
+Registrar productos (nombre, código, precio, cantidad)
 
-# SOLUCIÓN PROPUESTA:
+Actualizar automáticamente el inventario
 
-Se propone el diseño e implementación de un sistema de información que permita automatizar los
+Generar reportes de ventas (diarios, semanales, mensuales)
 
-procesos de gestión de inventario y registro de ventas.
+Controlar niveles mínimos de stock
 
-El sistema deberá:
+Reducir errores humanos
 
-Registrar productos (nombre, código, precio, cantidad disponible).
+Resultado esperado: Mejorar la gestión interna, aumentar la productividad y optimizar el servicio al cliente.
 
-Actualizar automáticamente el inventario al realizar una venta.
+ARQUITECTURA DEL SISTEMA
 
-Generar reportes de ventas diarias, semanales y mensuales.
-
-Controlar niveles mínimos de stock.
-
-Reducir errores humanos en el registro de datos.
-
-En conclusión, la implementación del sistema informático contribuirá a mejorar la gestión interna
-
-de Beauty Studio, aumentando la productividad y la calidad del servicio al cliente.
-
-## Arquitectura de Sistemas [ Beauty - Studio ]
-
-##ENTRADAS ( Inputs )
-
-¿ Qué datos recibe el sistema ?
-El sistema de información propuesto recibirá diferentes tipos de datos de entrada necesarios para la gestión del inventario y las ventas. Estos datos pueden clasificarse de la siguiente manera:
+📥 ENTRADAS (Inputs)
 
 Datos de productos:
-Código del producto
 
-Nombre del producto
+Código
+
+Nombre
 
 Categoría
 
-Precio de venta
+Precio
 
-Cantidad disponible en inventario
+Cantidad disponible
 
 Datos de ventas:
-Fecha y hora de la transacción
+
+Fecha y hora
 
 Productos vendidos
 
-Cantidad vendida por producto
+Cantidad
 
-Valor total de la venta
+Total
 
-Método de pago (efectivo, transferencia, tarjeta, etc.)
+Método de pago
 
 Datos de proveedores:
-Nombre del proveedor
 
-Número de contacto
+Nombre
+
+Contacto
 
 Productos suministrados
 
 Precio de compra
 
-Datos de usuarios del sistema:
-Nombre del empleado
+Datos de usuarios:
+
+Nombre
 
 Usuario y contraseña
 
-Rol (administrador, vendedor, etc.)
+Rol
 
-¿Quién los ingresa ?
+Responsables:
 
-Vendedores o cajeros:
-Registran las ventas diarias.
+Vendedores: registran ventas
 
-Ingresan los productos vendidos y la cantidad.
+Administrador: gestiona productos y usuarios
 
-Seleccionan el método de pago.
+Tipos de datos:
 
-Generan la factura o comprobante.
+Numéricos: precios, cantidades
 
-Son los principales responsables de la entrada de datos relacionados con las transacciones comerciales.
+Texto: nombres, códigos, categorías
 
-Administrador del sistema:
-Registra nuevos productos.
+🔨 PROCESOS (Throughput)
 
-Actualiza precios.
+Almacenamiento:
 
-Modifica cantidades iniciales de inventario.
+Base de datos estructurada (productos, ventas, usuarios)
 
-Gestiona usuarios y permisos.
+Procesamiento:
 
-Tiene acceso a funciones más avanzadas y de configuración.
+Cálculo automático de ventas
 
-¿Son números, texto, archivos?
-El sistema para Beauty Studio manejará diferentes tipos de datos, según su naturaleza:
+Actualización del inventario
 
-Datos numéricos:
-Se utilizan para cálculos y control cuantitativo:
+Generación de ingresos
 
-Precio de los productos
+Validaciones:
 
-Cantidad en inventario
+Campos obligatorios
 
-Cantidad vendida
+Tipos de datos correctos
 
-Datos de texto (alfanuméricos):
-Se utilizan para identificación y descripción de:
+Formatos válidos
 
-Nombre del producto
+Cálculos:
 
-Código del producto
+Total = precio × cantidad
 
-Método de pago
+Stock = stock actual − ventas
 
-Categoría del producto
+📤 SALIDAS (Outputs)
 
-Datos de fecha y hora:
-Fecha de la venta
+Información generada:
 
-Hora de la transacción
+Estado del inventario en tiempo real
 
-Fecha de ingreso de inventario
+Registro actualizado de ventas
+
+Reportes:
+
+Ventas (diarias, semanales, mensuales)
+
+Productos más vendidos
+
+Productos con bajo stock
+
+Ingresos totales
+
+Otros:
+
+Facturas o comprobantes digitales
+
+👥 USUARIOS Y ROLES
+
+Administrador:
+
+Control total
+
+Gestión de productos, usuarios y reportes
+
+Vendedor/Cajero:
+
+Registro de ventas
+
+Consulta de productos
+
+Control de acceso:
+
+Basado en roles
+
+Permisos diferenciados
+
+📌 INFORMACIÓN CRÍTICA
+
+Datos críticos:
+
+Inventario (cantidades, códigos)
+
+Ventas (historial, totales)
+
+Precios
+
+Datos que no se pueden perder:
+
+Historial de ventas
+
+Información de productos
+
+Inventario
+
+Usuarios y accesos
+
+🎯 IMPACTO DEL SISTEMA
+
+Problemas que soluciona:
+
+Desorganización operativa
+
+Falta de control administrativo
+
+Información poco confiable
+
+Ineficiencia en procesos
+
+Niveles de decisión:
+
+Operativo: control diario
+
+Táctico: gestión de inventario
+
+Estratégico: crecimiento del negocio
+
+DECISIONES QUE PERMITE TOMAR
+
+Reposición de productos
+
+Identificación de productos más vendidos
+
+Aplicación de promociones
+
+Control de ingresos
+
+Planeación del crecimiento
